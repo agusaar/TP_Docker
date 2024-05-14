@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carga de Productos - Supermercado</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="//cdn.jsdelivr.net/npm/pouchdb@8.0.1/dist/pouchdb.min.js"></script>
 </head>
 <body>
   <header class="header">
@@ -22,7 +23,7 @@
         <label for="productDescription">Descripcion del Producto:</label>
         <input type="text" id="productDescription" class="productDescription" name="productDescription" required>
         
-        <button type="submit" class="submitBtn">Cargar Producto</button>
+        <button class="submitBtn">Cargar Producto</button>
       </form>
     </div>
     <div class="conTabla">
@@ -41,6 +42,7 @@
   <footer class="footer">
     <p>Hecho con 💙💛 por Boca Juniors</p>
   </footer>
-  <script src="script.js"></script>
+  <script src="index.js" type="module"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
 </body>
 </html>
