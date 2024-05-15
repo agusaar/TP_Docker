@@ -35,7 +35,7 @@ function generarEnteroRandom(min, max) {
 }
 
 const createRandItem = async () => {
-  let numeroRandom = generarEnteroRandom(0, 20);
+  let numeroRandom = generarEnteroRandom(0, 19);
   await ProductsService.createProduct(productos[numeroRandom]);
 }
 
