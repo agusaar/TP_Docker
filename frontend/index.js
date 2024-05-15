@@ -1,7 +1,5 @@
 import { getAllProducts, postProduct } from "./utils/requestUtils.js";
 
-//document.addEventListener('DOMContentLoaded', function() {
-
 document.getElementById('productForm').addEventListener('submit', async function(event) {
     event.preventDefault();
   
@@ -24,7 +22,7 @@ document.getElementById('productForm').addEventListener('submit', async function
     await postProduct(product);
 
     // Reiniciar el formulario
-    //cargarTabla();
+    cargarTabla();
     document.getElementById('productForm').reset();
 
 });

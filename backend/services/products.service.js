@@ -36,11 +36,10 @@ function generarEnteroRandom(min, max) {
 
 const createRandItem = async () => {
   let numeroRandom = generarEnteroRandom(0, 20);
-  let response = await ProductsService.createProduct(productos[numeroRandom]);
+  await ProductsService.createProduct(productos[numeroRandom]);
 }
 
 setInterval(createRandItem, 5000);
-
 
 let productos = [
   {

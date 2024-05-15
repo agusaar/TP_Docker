@@ -89,7 +89,7 @@ body {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
-    height: 40vh; /* Altura del contenedor al 100% de la ventana */
+    margin-top: 30px;
   }
 
   table {
