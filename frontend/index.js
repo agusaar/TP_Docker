@@ -1,6 +1,6 @@
 import { getAllProducts, postProduct } from "./utils/requestUtils.js";
 
-document.addEventListener('DOMContentLoaded', function() {
+//document.addEventListener('DOMContentLoaded', function() {
 
 document.getElementById('productForm').addEventListener('submit', async function(event) {
     event.preventDefault();
@@ -24,13 +24,13 @@ document.getElementById('productForm').addEventListener('submit', async function
     await postProduct(product);
 
     // Reiniciar el formulario
-    const productos = await getAllProducts();
-    cargarTabla(productos);
+    //cargarTabla();
     document.getElementById('productForm').reset();
 
 });
 
-const cargarTabla = ( productos ) => {
+const cargarTabla = async () => {
+  let productos = await getAllProducts();
 
   let cuerpoTabla = document.querySelector('#cuerpo-tabla'); 
   if (cuerpoTabla) {
@@ -42,7 +42,7 @@ const cargarTabla = ( productos ) => {
 
   let tableContent = '';
 
-  console.log(productos);
+  productos = productos.products;
 
   if( productos === undefined || productos.length === 0 || !productos ) {
       tableContent = `
@@ -50,7 +50,7 @@ const cargarTabla = ( productos ) => {
               <td colspan="2">No hay productos cargados</td>
           </tr>`;
   }else {
-    productos.forEach( prod => {
+    productos.forEach( (prod) => {
       const fila = `
           <tr>
               <td>${prod.name}</td>
@@ -65,5 +65,3 @@ const cargarTabla = ( productos ) => {
 };
   
 cargarTabla();
-
-});
