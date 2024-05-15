@@ -53,6 +53,7 @@ const cargarTabla = async () => {
           <tr>
               <td>${prod.name}</td>
               <td>${prod.price}</td>
+              <td>${prod.description}</td>
           </tr>`;
 
       tableContent += fila;

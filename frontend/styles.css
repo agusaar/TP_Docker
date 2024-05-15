@@ -95,6 +95,7 @@ body {
   table {
     width: 40%;
     border-collapse: collapse;
+    margin-bottom: 100px;
  }
  th, td {
     width: 25%;
@@ -105,4 +106,5 @@ body {
  thead{
   background-color: #1f287b;
   color: #ffd100;
+  height: 30px;
  }
