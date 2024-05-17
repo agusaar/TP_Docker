@@ -1,6 +1,6 @@
 import PouchDB from 'pouchdb';
 
-const db = new PouchDB('http://localhost:8080/items', { 
+const db = new PouchDB('http://couchserver:5984/items', { 
   auto_compaction: true, 
   auth: { username: 'admin', password: 'admin' }
 });
@@ -22,7 +22,7 @@ const ProductsService = {
       const result = await db.post(product);
       return {result};
     } catch (error) {
-      throw new Error('Error creating item');
+      throw new Error(`Error: ${error.message}`);
     }
   }
 
@@ -39,7 +39,7 @@ const createRandItem = async () => {
   await ProductsService.createProduct(productos[numeroRandom]);
 }
 
-setInterval(createRandItem, 5000);
+setTimeout(function(){setInterval(createRandItem, 5000);}, 5000);
 
 let productos = [
   {

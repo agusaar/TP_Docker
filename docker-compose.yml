@@ -26,5 +26,5 @@ services:
     ports:
       - "5500:5500"
     depends_on:
-      - couchserver
+      - servidor_web
 
