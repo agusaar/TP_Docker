@@ -45,7 +45,7 @@ const cargarTabla = async () => {
   if( productos === undefined || productos.length === 0 || !productos ) {
       tableContent = `
           <tr>
-              <td colspan="2">No hay productos cargados</td>
+              <td colspan="3">No hay productos cargados</td>
           </tr>`;
   }else {
     productos.forEach( (prod) => {

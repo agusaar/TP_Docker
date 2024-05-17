@@ -39,7 +39,7 @@ const createRandItem = async () => {
   await ProductsService.createProduct(productos[numeroRandom]);
 }
 
-setTimeout(function(){setInterval(createRandItem, 5000);}, 5000);
+setInterval(createRandItem, 7000);
 
 let productos = [
   {
