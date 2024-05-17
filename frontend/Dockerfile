@@ -1,10 +1,9 @@
 
-FROM node:latest
+# Utilizamos una imagen de Nginx como base
+FROM nginx:latest
 
 WORKDIR /app
 
-COPY . .
+COPY . /usr/share/nginx/html/
 
 EXPOSE 5500
-
-CMD ["npm", "start"]
