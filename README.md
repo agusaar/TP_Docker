@@ -35,7 +35,7 @@ La aplicación web consiste en dar de alta y visualizar productos, detallando: *
 * `docker compose down`
     - Permite dar de baja la aplicacion completa con todos sus servicios.
 ### URL
-* `http://127.0.0.1:5500/index.html`
+* `http://localhost:5500`
 
 
 
