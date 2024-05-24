@@ -12,7 +12,7 @@ document.getElementById('productForm').addEventListener('submit', async function
       return;
     }
   
-    // Crear un objeto con los datos del producto
+    
     var product = {
       name: productName,
       price: parseFloat(productPrice),
@@ -21,7 +21,7 @@ document.getElementById('productForm').addEventListener('submit', async function
   
     await postProduct(product);
 
-    // Reiniciar el formulario
+    
     cargarTabla();
     document.getElementById('productForm').reset();
 

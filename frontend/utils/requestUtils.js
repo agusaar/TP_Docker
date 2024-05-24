@@ -1,4 +1,4 @@
-const baseURL = 'http://localhost:3000/items';
+const baseURL = 'http://servidorweb:3000/items';
 
 export async function getAllProducts() {
     try {
