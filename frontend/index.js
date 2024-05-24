@@ -49,10 +49,11 @@ const cargarTabla = async () => {
           </tr>`;
   }else {
     productos.forEach( (prod) => {
+      let price = `$ ${prod.price}`;
       const fila = `
           <tr>
               <td>${prod.name}</td>
-              <td>${prod.price}</td>
+              <td>${price}</td>
               <td>${prod.description}</td>
           </tr>`;
 
