@@ -12,7 +12,7 @@ services:
     volumes:
         - ./couchdb_data:/opt/couchdb/data
 
-  servidorweb:
+  servidor:
     build:
       context: ./backend
     ports:
@@ -20,12 +20,12 @@ services:
     depends_on:
       - couchserver
   
-  clienteweb:
+  cliente:
     build:
       context: ./frontend
     ports:
       - "5500:80"
     depends_on:
-      - servidorweb
+      - servidor
 
 
