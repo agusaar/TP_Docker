@@ -1,6 +1,6 @@
 # Docker + CouchDB (🐳 + 🛋️)
 
-![Docker](./WhaleOnCouch.jpeg)
+![Docker+Couch](./images/whale-on-couch.jpeg)
 
 La aplicación web consiste en dar de alta y visualizar productos, detallando: *Nombre, Precio y Descripcion del producto*. 
 
