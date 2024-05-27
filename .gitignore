@@ -3,3 +3,6 @@ node_modules
 .gitattributes
 
 couchdb_data
+
+*.jpeg
+*.jpg

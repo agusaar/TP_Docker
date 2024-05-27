@@ -1,5 +1,7 @@
 # Docker + CouchDB (🐳 + 🛋️)
 
+![Docker](./WhaleOnCouch.jpeg)
+
 La aplicación web consiste en dar de alta y visualizar productos, detallando: *Nombre, Precio y Descripcion del producto*. 
 
 ### Stack utilizado
@@ -17,11 +19,11 @@ La aplicación web consiste en dar de alta y visualizar productos, detallando: *
     - Se utiliza imagen de nginx
     - Puerto host: 5500
     - Puerto expuesto: 80
-* **Contenedor Servidor Web (*servidor_web*)**
+* **Contenedor Servidor Web (*servidorweb*)**
     - Se utiliza imagen de node
     - Puerto host: 3000
     - Puerto expuesto: 3000
-* **Contenedor Base de datos (*cliente_web*)**
+* **Contenedor Base de datos (*clienteweb*)**
     - Se utiliza imagen de CouchDB
     - Puerto host: 8080
     - Puerto expuesto: 5984
